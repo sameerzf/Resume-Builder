@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Dynamic Resume Builder</h1>
+
+    <form id="resume-form">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Education</legend>
+            <label for="education">Degree:</label>
+            <input type="text" id="education" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Work Experience</legend>
+            <label for="experience">Work Experience:</label>
+            <input type="text" id="experience" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Skills</legend>
+            <label for="skills">Skills:</label>
+            <input type="text" id="skills" required>
+        </fieldset>
+
+        <button type="submit">Generate Resume</button>
+    </form>
+
+    <div id="resume-display">
+        <h2>Generated Resume</h2>
+        <section id="personal-info">
+            <h3>Personal Information</h3>
+            <p>Name: <span id="display-name"></span></p>
+            <p>Email: <span id="display-email"></span></p>
+        </section>
+
+        <section id="education-info">
+            <h3>Education</h3>
+            <p><span id="display-education"></span></p>
+        </section>
+
+        <section id="work-info">
+            <h3>Work Experience</h3>
+            <p><span id="display-experience"></span></p>
+        </section>
+
+        <section id="skills-info">
+            <h3>Skills</h3>
+            <p><span id="display-skills"></span></p>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
